@@ -2,7 +2,7 @@
 el producto. No hay que calcular el resultado, tan solo hay que decir el signo.*/
 import java.util.Scanner;
 
-public class Actividad8 {
+public class Actividad08 {
 
 	public static void main(String[] args) {
 

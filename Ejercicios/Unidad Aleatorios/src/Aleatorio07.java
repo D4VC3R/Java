@@ -1,6 +1,6 @@
 /*Escribe un programa que muestra tres apuestas de la quiniela en tres columnas para 14
 partidos y el pleno al quince (15 filas).*/
-public class Aleatorio7 {
+public class Aleatorio07 {
     public static void main(String[] args) {
 
         int i;

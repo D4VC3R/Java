@@ -1,6 +1,6 @@
 /*Haz un programa que nos diga si dos números enteros son divisibles.*/
 import java.util.Scanner;
-public class Actividad4 {
+public class Actividad04 {
     public static void main(String[] args) {
 
             Scanner sc = new Scanner(System.in);

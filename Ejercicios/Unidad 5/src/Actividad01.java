@@ -1,6 +1,6 @@
 /*Realizar un programa que lea dos números y nos diga si son o no iguales.*/
 import java.util.Scanner;
-public class Actividad1 {
+public class Actividad01 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);

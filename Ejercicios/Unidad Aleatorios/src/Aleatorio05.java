@@ -1,6 +1,6 @@
 /* Muestra 50 números aleatorios entre 100 y 199 (ambos incluidos) separados por espacios.
 Muestra también el máximo, el mínimo y la media de esos números. */
-public class Aleatorio5 {
+public class Aleatorio05 {
     public static void main(String[] args) {
 
     int i, num, max=100, min=199, suma=0;

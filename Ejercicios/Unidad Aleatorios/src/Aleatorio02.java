@@ -3,7 +3,7 @@ baraja está dividida en cuatro palos: picas, corazones, diamantes y tréboles. 
 formado por 13 cartas, de la cuales 9 cartas son numerales y 4 literales:
 2,3,4,5,6,7,8,9,10,J,Q,K y A (que sería el 1). Para convertir número en una cadena de
 caracteres podemos usar String.valueOf(n).*/
-public class Aleatorio2 {
+public class Aleatorio02 {
     public static void main(String[] args) {
 
         int detPalo, numCarta;

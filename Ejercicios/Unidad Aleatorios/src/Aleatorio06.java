@@ -2,7 +2,7 @@
 tiene para ello 5 oportunidades. Después de cada intento fallido, el programa dirá cuantas
 oportunidades quedan y si el número introducido es menor o mayor que en número secreto.*/
 import java.util.Scanner;
-public class Aleatorio6 {
+public class Aleatorio06 {
     public static void main(String[] args) {
 
         int secret, intentos, num;
