@@ -1,5 +1,6 @@
+/*Haz un programa que lea un carácter por la entrada estándar y me diga si es una
+vocal o no.*/
 import java.util.Scanner;
-
 public class Actividad5 {
     public static void main(String[] args) {
 

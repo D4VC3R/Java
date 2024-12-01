@@ -1,6 +1,12 @@
+/*Haz un programa que lea el peso de los diferentes alumnos de una clase. Los
+pesos se irán leyendo hasta que se introduzca un número negativo. A
+continuación, se visualizará por pantalla la cantidad de alumnos que hay dentro
+de los siguientes rangos: menor de 50 Kg, entre 50 y 65 Kg, entre 66 y 80, y
+mayores de 80 Kg. Además, también queremos que se visualice el tanto por
+ciento que representa cada cantidad de alumnos respecto al total de alumnos
+así como el peso mediano de toda la clase.*/
 import java.util.Scanner;
-
-public class Pesos {
+public class Actividad30 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);

@@ -1,8 +1,5 @@
-package test;
-
 import java.util.Scanner;
-
-public class VocaloNo {
+public class Actividad5b {
 
 	public static void main(String[] args) {
 

@@ -1,6 +1,8 @@
+/*Haz un programa que lea un número entero desde el teclado y escriba el
+número de cifras que tiene. Tened en cuenta que se considera que el valor 0
+tiene una cifra*/
 import java.util.Scanner;
-
-public class Digitos {
+public class Actividad20 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);

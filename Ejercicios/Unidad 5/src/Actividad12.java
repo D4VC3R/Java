@@ -1,5 +1,9 @@
+/*Escribe un programa que lea la hora de un día con notación 24 horas y la
+visualice en notación de 12 horas. En la notación de 24 horas se pondrá un
+espacio para separar horas, los dos puntos y los minutos. Por ejemplo:
+Hora AM (hh : mm) = 13 : 55
+Son las 1:45 PM*/
 import java.util.Scanner;
-
 public class Actividad12 {
     public static void main(String[] args) {
 

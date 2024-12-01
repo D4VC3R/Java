@@ -1,3 +1,7 @@
+/*Haz un programa que lea desde el teclado dos números enteros positivos n1 y
+n2, con n1 < n2, y escriba, empezando desde n1, todos los números enteros
+que son múltiples de n1 más pequeños o iguales que n2, en orden creciente y
+en orden decreciente.*/
 import java.util.Scanner;
 public class Actividad18 {
     public static void main(String[] args) {

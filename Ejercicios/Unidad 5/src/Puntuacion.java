@@ -1,4 +1,4 @@
-package test;
+/**/
 import java.util.Scanner;
 
 public class Puntuacion {
@@ -12,7 +12,7 @@ public class Puntuacion {
 		
 		
 		   do { 
-	            System.out.print("Introduce puntuación: ");
+	            System.out.print("Introduce puntuaciÃ³n: ");
 	            puntuacion = sc.nextInt();
 	            
 	            if (puntuacion != 0) {
@@ -25,7 +25,7 @@ public class Puntuacion {
 	            
 	        } while (puntuacion != 0);
 
-	        System.out.println("Puntuación total: " + pTotal);
+	        System.out.println("PuntuaciÃ³n total: " + pTotal);
 	    }
 
 	}

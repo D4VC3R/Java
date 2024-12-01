@@ -1,7 +1,7 @@
 import java.util.Scanner;
-public class DineroModular {
+public class Actividad25Modular {
     public static void main(String[] args) {
-        DineroModular programa = new DineroModular();
+        Actividad25Modular programa = new Actividad25Modular();
         programa.inicio();
 
     }

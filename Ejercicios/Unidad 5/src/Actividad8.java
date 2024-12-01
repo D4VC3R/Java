@@ -1,17 +1,17 @@
-package test;
-
+/*Haz un programa que dados dos números enteros, nos diga el signo que tendrá
+el producto. No hay que calcular el resultado, tan solo hay que decir el signo.*/
 import java.util.Scanner;
 
-public class SignoProducto {
+public class Actividad8 {
 
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
 		int n1, n2, producto;
 		
-		System.out.print("N�mero: ");
+		System.out.print("Número: ");
 		n1 = sc.nextInt();
-		System.out.print("N�mero: ");
+		System.out.print("Número: ");
 		n2 = sc.nextInt();
 		
 		producto = n1*n2;
@@ -23,5 +23,4 @@ public class SignoProducto {
 		}else 
 			System.out.println("El producto de " +n1+ " multiplicado por "+n2+ " no es positivo ni negativo, es cero.");
 	}
-
 }

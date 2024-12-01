@@ -1,11 +1,11 @@
+/*Haz un programa que eleve un número a una potencia*/
 import java.util.Scanner;
-
-public class Potencia {
+public class Actividad29 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Digite um numero: ");
+        System.out.print("Número: ");
         int num = sc.nextInt();
         System.out.print("Potencia: ");
         int potencia = sc.nextInt();

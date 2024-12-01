@@ -1,3 +1,7 @@
+/*Haz un programa que lea desde el teclado dos valores enteros n1 y n2,
+compruebe que n1 < n2 (y muestre un error si no es así), y finalmente escriba
+todos los números enteros que hay dentro del intervalo [n1, n2] en orden
+creciente y en orden decreciente.*/
 import java.util.Scanner;
 public class Actividad17 {
     public static void main(String[] args) {

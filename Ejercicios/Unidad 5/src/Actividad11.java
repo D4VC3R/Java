@@ -1,5 +1,7 @@
+/*Escribe un programa que acepte fechas escritas de un modo normal (2 de
+febrero de 1989) y la visualice como tres números separados con una barra de
+división.*/
 import java.util.Scanner;
-
 public class Actividad11 {
     public static void main(String[] args) {
 

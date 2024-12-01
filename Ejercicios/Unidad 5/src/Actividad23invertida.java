@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class TrianguloInv {
+public class Actividad23invertida {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);

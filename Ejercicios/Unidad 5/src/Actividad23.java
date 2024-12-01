@@ -1,6 +1,8 @@
+/*Haz un programa que lea desde el teclado un valor entero y muestre por
+pantalla un triángulo rectángulo compuesto por letras ‘a’, con altura igual al valor
+leído. */
 import java.util.Scanner;
-
-public class TrianguloRect{
+public class Actividad23 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);

@@ -1,5 +1,6 @@
+/*Calcula el mayor de dos números introducidos por teclado. Si son iguales lo
+tendrá que indicar.*/
 import java.util.Scanner;
-
 public class Actividad2 {
     public static void main(String[] args) {
 

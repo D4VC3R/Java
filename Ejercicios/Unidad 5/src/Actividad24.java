@@ -1,8 +1,10 @@
+/*Haz un programa que lea desde el teclado un valor de tipo entero. A
+continuación, tiene que dibujar una pirámide hecha de asteriscos (‘*’) de una
+altura igual al valor leído.*/
 import java.util.Scanner;
-public class Piramide {
+public class Actividad24 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 		Scanner sc = new Scanner(System.in);
 		int i, filas, blancos, asteriscos;
@@ -23,9 +25,6 @@ public class Piramide {
             }
             System.out.println();
 		}
-
-		
-		
 	}
 
 }

@@ -1,3 +1,4 @@
+/*Realizar un programa que lea 3 números y nos diga cuál es el mayor*/
 import java.util.Scanner;
 public class Actividad3 {
     public static void main(String[] args) {

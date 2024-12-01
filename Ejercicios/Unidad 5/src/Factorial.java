@@ -1,7 +1,5 @@
-package test;
-
+/**/
 import java.util.Scanner;
-
 public class Factorial {
 
 	public static void main(String[] args) {
@@ -9,7 +7,7 @@ public class Factorial {
 		Scanner sc = new Scanner(System.in);
 		int cont, factor;
 		
-		System.out.print("Número: ");
+		System.out.print("NÃºmero: ");
 		int n = sc.nextInt();
 		
 		factor=1;

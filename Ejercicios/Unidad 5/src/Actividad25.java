@@ -1,6 +1,8 @@
+/*Realizar un programa en el cual el usuario introduzca una cantidad en euros
+(con decimales) y obtengamos los billetes y monedas de euros
+correspondientes, así como las monedas de céntimos correspondientes*/
 import java.util.Scanner;
-
-public class Dinero {
+public class Actividad25 {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
