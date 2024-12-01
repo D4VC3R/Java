@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Ejercicios Resueltos.iml" filepath="$PROJECT_DIR$/.idea/Ejercicios Resueltos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Examenes/Examenes.iml" filepath="$PROJECT_DIR$/Examenes/Examenes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Practicas/Practicas.iml" filepath="$PROJECT_DIR$/Practicas/Practicas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Unidad 4/Unidad 4.iml" filepath="$PROJECT_DIR$/Unidad 4/Unidad 4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Unidad 5/Unidad 5.iml" filepath="$PROJECT_DIR$/Unidad 5/Unidad 5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Unidad 6/Unidad 6.iml" filepath="$PROJECT_DIR$/Unidad 6/Unidad 6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Unidad Aleatorios/Unidad Aleatorios.iml" filepath="$PROJECT_DIR$/Unidad Aleatorios/Unidad Aleatorios.iml" />
+    </modules>
+  </component>
+</project>
