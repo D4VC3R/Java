@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
-public class Actividad5 {
+public class Actividad05 {
     public static void main(String[] args) {
 
-        Actividad5 programa = new Actividad5();
+        Actividad05 programa = new Actividad05();
         programa.inicio();
     }
 

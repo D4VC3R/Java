@@ -4,9 +4,9 @@ teclado dos valores y a continuación cambiará todas la ocurrencias del primer
 valor por el segundo en la lista generada anteriormente. Los números que se
 han cambiado deben aparecer entrecomillados.*/
 import java.util.Scanner;
-public class Actividad7 {
+public class Actividad07 {
     public static void main(String[] args) {
-        Actividad7 programa = new Actividad7();
+        Actividad07 programa = new Actividad07();
         programa.inicio();
 
     }

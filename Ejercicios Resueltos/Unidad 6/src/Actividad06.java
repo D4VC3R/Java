@@ -4,10 +4,10 @@ debe pasar a la posición 1, el de la 1 a la 2, etc. El número que se encuentra
 la última posición debe pasar a la posición 0. Finalmente, muestra el contenido
 del array.*/
 import java.util.Scanner;
-public class Actividad6 {
+public class Actividad06 {
     public static void main(String[] args) {
         
-        Actividad6 programa = new Actividad6();
+        Actividad06 programa = new Actividad06();
         programa.inicio();
     }
 

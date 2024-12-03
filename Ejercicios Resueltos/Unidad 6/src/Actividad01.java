@@ -1,7 +1,7 @@
-public class Actividad1 {
+public class Actividad01 {
     public static void main(String[] args) {
 
-        Actividad1 programa = new Actividad1();
+        Actividad01 programa = new Actividad01();
         programa.inicio();
     }
 
