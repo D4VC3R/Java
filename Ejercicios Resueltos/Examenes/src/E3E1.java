@@ -91,17 +91,17 @@ public class E3E1 {
     private String codificarTirada(int tirada) {
         String figura="";
 
-        if(tirada==0) {
-            figura = "calabaza";
-        }else if (tirada==1)
-            figura = "diamante";
-        else if (tirada==2)
-            figura = "elfo";
-        else if (tirada==3)
-            figura = "uvas";
-        else
-            figura = "tuerca";
-
+        switch(tirada) {
+            case 0: figura = "calabaza";
+            break;
+            case 1: figura = "diamante";
+            break;
+            case 2: figura = "elfo";
+            break;
+            case 3: figura = "uvas";
+            break;
+            default: figura = "tuerca";
+        }
         return figura;
 
     }
