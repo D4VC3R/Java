@@ -20,7 +20,7 @@ public class CodigoBarras {
     private void imprimirResultado(String codigoBarras, String pais) {
         if (isCodigoCorrecto(codigoBarras) && codigoBarras.length()==13)
             imprimirPantalla("SI " + pais);
-        else if (isCodigoCorrecto(codigoBarras))
+        else if (isCodigoCorrecto(codigoBarras) && codigoBarras.length()==8)
             imprimirPantalla("SI");
         else
             imprimirPantalla("NO");
@@ -29,23 +29,23 @@ public class CodigoBarras {
 
     private String comprobarPais(String codigoBarras) {
         String pais="";
-        if (codigoBarras.charAt(0)==0)
+        if (codigoBarras.charAt(0)=='0')
             pais = "EEUU";
-        else if (codigoBarras.charAt(0)==5 && codigoBarras.charAt(1)==0)
+        else if (codigoBarras.charAt(0)=='5' && codigoBarras.charAt(1)=='0')
             pais = "Inglaterra";
-        else if (codigoBarras.charAt(0)==7 && codigoBarras.charAt(1)==0)
+        else if (codigoBarras.charAt(0)=='7' && codigoBarras.charAt(1)=='0')
             pais = "Noruega";
-        else if (codigoBarras.charAt(0)==3 && codigoBarras.charAt(1)==8 && codigoBarras.charAt(2)==0)
+        else if (codigoBarras.charAt(0)=='3' && codigoBarras.charAt(1)=='8' && codigoBarras.charAt(2)=='0')
             pais = "Bulgaria";
-        else if (codigoBarras.charAt(0)==5 && codigoBarras.charAt(1)==3 && codigoBarras.charAt(2)==9)
+        else if (codigoBarras.charAt(0)=='5' && codigoBarras.charAt(1)=='3' && codigoBarras.charAt(2)=='9')
             pais = "Irlanda";
-        else if (codigoBarras.charAt(0)==5 && codigoBarras.charAt(1)==6 && codigoBarras.charAt(2)==0)
+        else if (codigoBarras.charAt(0)=='5' && codigoBarras.charAt(1)=='6' && codigoBarras.charAt(2)=='0')
             pais = "Portugal";
-        else if (codigoBarras.charAt(0)==7 && codigoBarras.charAt(1)==5 && codigoBarras.charAt(2)==9)
+        else if (codigoBarras.charAt(0)=='7' && codigoBarras.charAt(1)=='5' && codigoBarras.charAt(2)=='9')
             pais = "Venezuela";
-        else if (codigoBarras.charAt(0)==8 && codigoBarras.charAt(1)==5 && codigoBarras.charAt(2)==0)
+        else if (codigoBarras.charAt(0)=='8' && codigoBarras.charAt(1)=='5' && codigoBarras.charAt(2)=='0')
             pais = "Cuba";
-        else if (codigoBarras.charAt(0)==8 && codigoBarras.charAt(1)==9 && codigoBarras.charAt(2)==0)
+        else if (codigoBarras.charAt(0)=='8' && codigoBarras.charAt(1)=='9' && codigoBarras.charAt(2)=='0')
             pais = "India";
         else
             pais = "Desconocido";
@@ -57,29 +57,39 @@ public class CodigoBarras {
     }
 
     private boolean isCodigoCorrecto(String codigoBarras) {
-        int ultimoDigito;
-        ultimoDigito = codigoBarras.charAt(codigoBarras.length()-1);
-        //obtener la suma de los digitos multiplicados por 3 y 1 alternativamente.
-        int suma = 0;
-        if (codigoBarras.length()==8){
-            for (int i = codigoBarras.length()-2; i <= 0; i--) {
-                if (i%2!=0){
-                    suma += (codigoBarras.charAt(i)-'0')*3;
-                }else
-                    suma+= (codigoBarras.charAt(i)-'0')*1;
-            }
-        }else
-            for (int i = codigoBarras.length()-2; i <= 0 ; i--) {
-                if (i%2!=0){
-                    suma += (codigoBarras.charAt(i)-'0')*1;
-                }else
-                    suma += (codigoBarras.charAt(i)-'0')*3;
-            }
-            if ((suma + ultimoDigito)%10==0)
-                return true;
-            else
-                return false;
+        int ultimoDigito, suma, digitoComprobacion;
 
+        ultimoDigito = codigoBarras.charAt(codigoBarras.length()-1)-'0';
+        suma = 0;
+
+        if (codigoBarras.length()==8){
+            for (int i = codigoBarras.length()-2; i >= 0; i--) {
+                if (isPar(i)){
+                    suma += (codigoBarras.charAt(i) - '0')*3;
+                }else
+                    suma += (codigoBarras.charAt(i) - '0');
+            }
+        }else{
+            for (int i = codigoBarras.length()-2; i >= 0; i--) {
+                if (!isPar(i))
+                    suma += (codigoBarras.charAt(i) - '0')*3;
+                else
+                    suma += (codigoBarras.charAt(i) - '0');
+            }
+        }
+        digitoComprobacion = 10 - (suma%10);
+
+        if (digitoComprobacion==10)
+            digitoComprobacion=0;
+
+        if (digitoComprobacion==ultimoDigito)
+            return true;
+        else
+            return false;
+    }
+
+    private boolean isPar(int i) {
+        return i%2==0;
     }
 
     private String getCodigoBarras(String codigo) {
@@ -121,8 +131,7 @@ public class CodigoBarras {
 
     private String getCadena() {
         Scanner sc = new Scanner(System.in);
-        return sc.nextLine().trim();
+        return sc.nextLine();
     }
-
 
 }
