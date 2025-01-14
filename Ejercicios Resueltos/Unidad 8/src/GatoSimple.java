@@ -1,5 +1,6 @@
 public class GatoSimple {
 
+
     //Atributos
 
     String color;
@@ -7,6 +8,16 @@ public class GatoSimple {
     String sexo;
     byte edad;
     double peso;
+
+    //Constructor
+
+    GatoSimple(){
+        color = "Naranja";
+        raza = "Siamés";
+        sexo = "Hembra";
+        edad = 7;
+        peso = 5.6;
+    }
 
     //Métodos
 
@@ -19,38 +30,18 @@ public class GatoSimple {
     }
 
     public double comer(){
+        System.out.println("El gato ha comido.");
         return this.peso += 0.1;
     }
 
     public void pelear(GatoSimple otroGato){
-        if (this.sexo.equalsIgnoreCase("Macho")&& otroGato.sexo.equalsIgnoreCase("Macho")
-        || this.sexo.equalsIgnoreCase("Hembra") && otroGato.sexo.equalsIgnoreCase("Hembra"))
+        if ((this.sexo.equalsIgnoreCase("Macho") || this.sexo.equalsIgnoreCase("Hermafrodita"))
+        && (otroGato.sexo.equalsIgnoreCase("Macho") || otroGato.sexo.equalsIgnoreCase("Hermafrodita")))
             System.out.println("Los gatos se están peleando.");
         else
             System.out.println("Los gatos se llevan bien.");
     }
-
-    //Metodo Main
-
-    public static void main(String[] args) {
-
-        GatoSimple gato1 = new GatoSimple();
-        GatoSimple gato2 = new GatoSimple();
-
-        gato1.color="Naranja";
-        gato1.raza="Siamés";
-        gato1.sexo="Macho";
-        gato1.edad=5;
-        gato1.peso=8.6;
-
-        gato2.color="Negro";
-        gato2.raza="Persa";
-        gato2.sexo="Macho";
-        gato2.edad=6;
-        gato2.peso=7.9;
-
-        gato1.maullar();
-        gato2.ronronear();
-        gato1.pelear(gato2);
+    public void peso(){
+        System.out.println("El gato pesa "+peso+"Kg.");
     }
 }
