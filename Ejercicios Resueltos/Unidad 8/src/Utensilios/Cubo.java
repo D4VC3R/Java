@@ -7,7 +7,7 @@ public class Cubo {
     private String color = "Sin color";
     private String material;
     private boolean asa = true;
-    private double contenidoLiquido = 0.0;
+    private int contenidoLiquido = 0;
 
     //Setters
 
@@ -26,12 +26,12 @@ public class Cubo {
         this.asa = asa;
     }
 
-    public void setContenidoLiquido(double contenidoLiquido){
+    public void setContenidoLiquido(int contenidoLiquido){
         if (contenidoLiquido + getContenidoLiquido()<=getCapacidadMax()) {
             this.contenidoLiquido += contenidoLiquido;
         }else {
+            System.out.println("Cubo lleno, se han añadido " + (capacidadMax-getContenidoLiquido())+" litros y ha/han sobrado "+((getContenidoLiquido()+contenidoLiquido)-capacidadMax)+" litro/s");
             this.contenidoLiquido = capacidadMax;
-            System.out.println("Cubo lleno, se han añadido " + (capacidadMax - getContenidoLiquido()));
         }
     }
 
@@ -53,12 +53,12 @@ public class Cubo {
         return asa;
     }
 
-    public double getContenidoLiquido() {
+    public int getContenidoLiquido() {
         return contenidoLiquido;
     }
     //Constructor
 
-    Cubo(int capacidadMax, String material) {
+    public Cubo(int capacidadMax, String material) {
         this.capacidadMax = capacidadMax;
         this.material = material;
     }
@@ -71,10 +71,10 @@ public class Cubo {
     public boolean vaciar(){
         return contenidoLiquido == 0;
     }
-    public void ponerAgua(double cantidadAPoner){
+    public void ponerAgua(int cantidadAPoner){
         contenidoLiquido += cantidadAPoner;
     }
-    public void quitarAgua(double cantidadAQuitar){
+    public void quitarAgua(int cantidadAQuitar){
         contenidoLiquido -= cantidadAQuitar;
     }
 }
