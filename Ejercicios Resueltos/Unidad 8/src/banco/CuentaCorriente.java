@@ -16,17 +16,23 @@ public class CuentaCorriente {
 
 
     //Métodos
-    public boolean sacarDinero(int dinero){
-        if (getSaldo()-dinero >=getLimiteDescubierto()){
-            if (getSaldo()-dinero<0){
-
+    public boolean sacarDinero(int dinero) {
+        if ((getSaldo() - dinero) < getLimiteDescubierto()) {
+            System.out.println("Lo sentimos, no puedes pasar el límite de descubierto.\n");
+            return false;
+        }else {
+            if ((getSaldo() - dinero) < 0) {
+                System.out.println("Se han sacado " + dinero + "€.");
+                setLimiteDescubierto(getSaldo(), dinero);
+                setSaldo(0);
             }
+            return true;
         }
     }
 
 
     public void ingresarDinero(int dinero){
-        saldo += dinero;
+        setSaldo(getSaldo()+dinero);
     }
     public int getSaldo(){
         return saldo;
@@ -45,8 +51,13 @@ public class CuentaCorriente {
     private void setDNI(String dni) {
         this.dni = dni;
     }
+
+    public void setSaldo(int saldo) {
+        this.saldo = saldo;
+    }
+
     private void setLimiteDescubierto(int saldo, int dinero){
-        limiteDescubierto += saldo-dinero;
+        limiteDescubierto -= saldo-dinero;
     }
 
 }
