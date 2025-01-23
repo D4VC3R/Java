@@ -7,6 +7,7 @@ public class CuentaCorriente {
     private int limiteDescubierto = -50;
     private String nombre;
     private String dni;
+    private static String banco = "Sabadell";
 
     //Constructor
     public CuentaCorriente(String nombre, String dni) {
@@ -30,6 +31,10 @@ public class CuentaCorriente {
         }
     }
 
+    public void modificarNombreBanco (String nuevoNombre){
+        setBanco(nuevoNombre);
+    }
+
 
     public void ingresarDinero(int dinero){
         setSaldo(getSaldo()+dinero);
@@ -42,7 +47,7 @@ public class CuentaCorriente {
     }
     public void mostrarInfo(){
         System.out.print("Nombre: "+nombre+"\nSaldo: "+saldo+"\n" +
-                "Límite descubierto: "+limiteDescubierto);
+                "Límite descubierto: "+limiteDescubierto+"\nBanco: "+banco);
     }
 
     private void setNombre(String nombre){
@@ -60,4 +65,7 @@ public class CuentaCorriente {
         limiteDescubierto -= saldo-dinero;
     }
 
+    private static void setBanco(String banco) {
+        CuentaCorriente.banco = banco;
+    }
 }
