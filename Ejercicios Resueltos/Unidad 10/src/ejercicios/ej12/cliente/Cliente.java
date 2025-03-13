@@ -13,18 +13,22 @@ public class Cliente implements Comparable<Cliente> {
     }
 
     //Metodos
-    @Override
+    @Override //Si al comparar tele
     public int compareTo(Cliente o) {
+        int resultado = this.telefono.compareTo(o.telefono);
+
+        if (resultado == 0) return 0;
+
         return this.idCliente - o.idCliente;
     }
+
 
     @Override
     public boolean equals(Object o) {
         Cliente cliente = (Cliente) o;
-        if (this == o)
-            return true;
-        if (o == null || getClass() != o.getClass())
-            return false;
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
         return telefono.equals(cliente.telefono);
     }
 

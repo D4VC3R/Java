@@ -30,7 +30,7 @@ public class Menu {
                         break;
                         case 4: tabla.listarClientes();
                         break;
-                        case 5: opcionValida = true;
+                        case 5: tabla.guardarTabla(); opcionValida = true;
                         break;
                     }
                 }
