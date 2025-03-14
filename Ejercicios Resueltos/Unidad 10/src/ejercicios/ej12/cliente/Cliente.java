@@ -1,11 +1,14 @@
 package ejercicios.ej12.cliente;
 
-public class Cliente implements Comparable<Cliente> {
+import java.io.Serializable;
+
+public class Cliente implements Comparable<Cliente>, Serializable {
     private static int id = 0;
     private String nombre;
     private String telefono;
     private int idCliente;
 
+    //Constructor
     public Cliente(String nombre, String telefono) {
         this.nombre = nombre;
         this.telefono = telefono;
@@ -13,7 +16,7 @@ public class Cliente implements Comparable<Cliente> {
     }
 
     //Metodos
-    @Override //Si al comparar tele
+    @Override //Si los teléfonos son diferentes, ordena por ID
     public int compareTo(Cliente o) {
         int resultado = this.telefono.compareTo(o.telefono);
 
@@ -23,7 +26,7 @@ public class Cliente implements Comparable<Cliente> {
     }
 
 
-    @Override
+    @Override //Telefono como primary key para este ejercicio
     public boolean equals(Object o) {
         Cliente cliente = (Cliente) o;
         if (this == o) return true;
@@ -47,20 +50,9 @@ public class Cliente implements Comparable<Cliente> {
         return nombre;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
     public String getTelefono() {
         return telefono;
     }
 
-    public void setTelefono(String telefono) {
-        this.telefono = telefono;
-    }
-
-    public int getIdCliente() {
-        return idCliente;
-    }
 
 }
