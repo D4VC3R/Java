@@ -1,0 +1,6 @@
+Este es un archivo de texto
+que contiene varias líneas
+y que voy a cifrar
+utilizando un hashmap
+con una clave secreta
+que se genera aleatoriamente
