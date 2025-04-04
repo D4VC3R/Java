@@ -30,6 +30,10 @@ public class Libreria implements Serializable {
 
     @Override
     public String toString() {
-        return "Stock: " + stock;
+        String cad ="Stock de la librería:\n";
+        for (HashMap.Entry<Libro, Integer> entry : stock.entrySet()) {
+            cad += entry.getKey().toString() + " - Cantidad: " + entry.getValue() + "\n";
+        }
+        return cad;
     }
 }
